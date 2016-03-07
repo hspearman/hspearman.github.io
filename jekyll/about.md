@@ -7,6 +7,4 @@ Hi, I’m Hannah. I’m a **Software Engineer** that works in **Web Development*
 
 Aside from work, I like to craft personal projects– not only to learn, but to make my ideas (large or small) tangible.
 
-I read and write about technical topics to go beyond abstractions and see how stuff really works.
-
 When I’m not deep in code, I like to practice guitar, bike, read, play video games, find new music, go to concerts, hunt for hobbies, and seek out adventures.
