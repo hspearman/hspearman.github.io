@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-Hi, I’m Hannah. I’m a **Software Engineer** that works in **Web Development** and lives in **Chicago, Illinois**. I love programming so I do it for a living.
+Hi, I’m Hannah. I’m a **Software Engineer** focused in **Web Development** that lives in **Chicago, Illinois**. I love programming so I do it for a living.
 
 Aside from work, I like to craft personal projects– not only to learn, but to make my ideas (large or small) tangible.
 
