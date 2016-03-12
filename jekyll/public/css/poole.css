@@ -50,7 +50,7 @@ body {
 html {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
-  line-height: 1.75;
+  line-height: 2;
 }
 @media (min-width: 38em) {
   html {
@@ -286,9 +286,9 @@ tbody tr:nth-child(odd) th {
  */
 
 .container {
-  max-width: 38rem;
-  /*padding-left:  1rem;
-  padding-right: 1rem;*/
+  max-width: 43rem;
+  padding-left:  1rem;
+  padding-right: 1rem;
   margin-left:  auto;
   margin-right: auto;
 }

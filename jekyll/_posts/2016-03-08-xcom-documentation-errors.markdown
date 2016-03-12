@@ -4,15 +4,15 @@ title: "XCOM 2 Modding: How to Fix Some Mistakes in the UI Doc"
 date: 2016-03-10 21:10:00 -0600
 categories: xcom2 modding
 ---
-XCOM 2, the sequal to XCOM: Enemy Unknown, was released with day-one modding support. As a programmer and a huge XCOM fan, I was pretty excited about the news.
+As a programmer and a huge XCOM fan, I was pretty excited that XCOM 2 was released with day-one modding support. 
 
-This modding support features an SDK on Steam Workshop, along with PDFs to guide modders through the process. Eager to make my own mods, I turned to Firaxis' documentation to learn about UI modding.
+The modding support features an SDK on Steam Workshop, along with PDFs to guide modders through the process. Eager to make my own mods, I turned to Firaxis' documentation to learn about UI modding.
 
 I tried running some sample code as a starting point-- unfortunately, it didn't exactly compile. In fact, the sample code is broken.
 
 After plenty of struggling, I finally got it working. This post documents the changes needed to fix the code.
 
-Under the **Manipulating current UI elements** section of the UI doc (XCOM 2 SDK > Documentation > Tech folder > XCOM2Mods_UserInterface.pdf), this sample code is found:
+Under the **Manipulating current UI elements** section of the UI doc (*XCOM 2 SDK > Documentation > Tech folder > XCOM2Mods_UserInterface.pdf*), this sample code is found:
 
 ~~~ javascript
 class UIAddAHudWidgetToPowerCOre extends UIScreenListener;
