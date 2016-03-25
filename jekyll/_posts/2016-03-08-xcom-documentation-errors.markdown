@@ -4,13 +4,14 @@ title: "XCOM 2 Modding: How to Fix Some Mistakes in the UI Doc"
 date: 2016-03-10 21:10:00 -0600
 categories: xcom2 modding
 ---
-As a programmer and a huge XCOM fan, I was pretty excited that XCOM 2 was released with day-one modding support. 
+As a programmer and a huge XCOM fan, I was pretty excited that XCOM 2 was released with day-one modding support.
 
-The modding support features an SDK on Steam Workshop, along with PDFs to guide modders through the process. Eager to make my own mods, I turned to Firaxis' documentation to learn about UI modding.
+For my own mod, I ran some sample code as a starting point. Unfortunately, it didn't exactly compile-- in fact, the sample code is broken.
 
-I tried running some sample code as a starting point-- unfortunately, it didn't exactly compile. In fact, the sample code is broken.
+I finally got it working, but it took some trial-and-error and plenty of struggling. To save everyone else the trouble, I've documented the changes here.
 
-After plenty of struggling, I finally got it working. This post documents the changes needed to fix the code.
+
+## Finding the Sample Code
 
 Under the **Manipulating current UI elements** section of the UI doc (*XCOM 2 SDK > Documentation > Tech folder > XCOM2Mods_UserInterface.pdf*), this sample code is found:
 
@@ -65,6 +66,8 @@ defaultproperties
 	ScreenClass = class'UIFacility_PowerCore';
 }
 ~~~
+
+## Making the Changes
 	
 If you build this code, some errors occur. Here are the changes you need to make:
 
@@ -101,6 +104,8 @@ If you build this code, some errors occur. Here are the changes you need to make
 	From my understanding, intializing a UIPanel isn't enough. We need to continually refresh via `BGBox.Show()` as the UI redraws itself.
 	
 	This logic is already applied to `DisplayText`.
+	
+## The Final Product
 
 After these fixes, the sample code should work. Here's the final result:
 
@@ -157,6 +162,8 @@ defaultproperties
 	ScreenClass = class'UIFacility_PowerCore';
 }
 ~~~
+
+## Testing the Changes
 	
 Click Debug > Start Debugging. Select your mod and start the game. From here, launch Strategy mode and navigate to the Research tab. This should display:
 

@@ -157,7 +157,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (min-width: 30em) {
   .sidebar {
-    font-size: .75rem; /* 14px */
+    font-size: .85rem; /* 14px */
   }
 }
 
@@ -547,6 +547,10 @@ a.pagination-item:hover {
 .theme-base-0g .sidebar-toggle,
 .theme-base-0g .related-posts li a:hover {
   color: #04A466;
+}
+
+.theme-base-0g h1, h2, h3, h4, h5 {
+	color: #04A466
 }
 
 /*
