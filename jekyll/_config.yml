@@ -13,7 +13,7 @@ description:         'A reserved <a href="http://jekyllrb.com" target="_blank">J
 url:                 http://lanyon.getpoole.com
 baseurl:             ''
 paginate:            5
-paginate_path:		 "page:num"
+paginate_path:		   "page:num"
 
 # About/contact
 author:
@@ -23,3 +23,7 @@ author:
 
 # Custom vars
 version:             1.0.0
+
+# Collections
+collections:
+  - projects
