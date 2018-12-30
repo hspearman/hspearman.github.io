@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Ditch Your Fancy Note-taking Apps; Apply Unix Philosophy Instead"
-date: 2018-12-30 10:10:00 -0600
+date: 2018-12-30 14:00:00 -0600
 ---
 
 I'm big on taking notes. It's a helpful way to keep track of ideas, tasks, goals, reference material, and more.
