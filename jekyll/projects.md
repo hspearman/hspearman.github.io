@@ -4,8 +4,8 @@ title: Projects
 ---
 
 <div>
-  <p>When I find the time, I like to make projects. It's not only a good exercise in creativity, but a great way for me to try new tech outside of work. You'll find a list of my past and present projects below.</p>
-  <p>Most of my projects, along with some miscellaneous work, are available <a href="https://github.com/hspearman">here</a> on my Github account.</p>
+  <p>When I find the time, I like to make projects. It's not only a good exercise in creativity, but also a great way to try new tech outside of work. You'll find a list of my past and present projects below.</p>
+  <p>Most of my projects are public on my <a href="https://github.com/hspearman">Github account</a>.</p>
 </div>
 <div class="projects">
   {% assign projects = site.projects | sort: 'date' %}

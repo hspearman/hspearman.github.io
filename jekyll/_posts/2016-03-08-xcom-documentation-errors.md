@@ -2,7 +2,6 @@
 layout: post
 title: "XCOM 2 Modding: How to Fix Some Mistakes in the UI Doc"
 date: 2016-03-10 21:10:00 -0600
-categories: xcom2 modding
 ---
 As a programmer and a huge XCOM fan, I was pretty excited that XCOM 2 was released with day-one modding support.
 

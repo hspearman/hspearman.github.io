@@ -4,7 +4,7 @@
 permalink:           pretty
 
 # Dependencies
-gems:				 [jekyll-paginate]
+plugins:				 [jekyll-paginate]
 
 # Setup
 title:               Hannah Spearman
