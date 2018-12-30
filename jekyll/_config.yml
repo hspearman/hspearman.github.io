@@ -3,9 +3,6 @@
 # Use of `relative_permalinks` ensures post links from the index work properly.
 permalink:           pretty
 
-# Dependencies
-plugins:				 [jekyll-paginate]
-
 # Setup
 title:               Hannah Spearman
 tagline:             A Development Blog
