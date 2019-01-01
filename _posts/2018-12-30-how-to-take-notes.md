@@ -54,7 +54,7 @@ Create notes in a Dropbox folder to easily back-up and sync them across your dev
 
 Dedicated note-taking apps often provide an imperfect experience. Instead, pick tools that do one thing really well and use them together.
 
-Markdown is a universal markup language that offers a simple yet effective way to format your documents. Visual Studio Code built-in Markdown support and vim keybindings make it a great text editor. Finally, Dropbox backs up your data and makes it easy to share with other people.
+Markdown is a universal markup language that offers a simple yet effective way to format your documents. Visual Studio Code's built-in Markdown support and vim keybindings make it a great text editor. Finally, Dropbox backs up your data and makes it easy to share with other people.
 
 If you're not much of a note-taker, I recommend picking up the habit. If you're already in the habit, try switching up your workflow with these three tools instead. 
 
