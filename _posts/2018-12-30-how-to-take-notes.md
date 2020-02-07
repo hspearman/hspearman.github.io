@@ -36,7 +36,7 @@ No more strange shortcuts or obscured buttons buried in an app's toolbar. Format
 
 Great: we have a way to format notes. Now what's the best way to edit and view them?
 
-Unless you've been living under a rock, you have likely heard people sing their praises for Visual Studio Code. It's my daily driver for coding these days-- and with **built-in markdown support and a plugin for vim keybindings**, it's makes for a great text editor too.
+Unless you've been living under a rock, you have likely heard people sing their praises for Visual Studio Code. It's my daily driver for coding these days-- and with **built-in markdown support and a plugin for vim keybindings**, it makes for a great text editor too.
 
 To take advantage of VSCode's Markdown support, first create a file with the `.md` extension. To preview your text as you type, bring up the Command Palette and select `Markdown: Open preview to the side`.
 
