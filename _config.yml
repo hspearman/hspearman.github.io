@@ -4,19 +4,19 @@
 permalink:           pretty
 
 # Setup
-title:               Hannah Spearman
-tagline:             A Development Blog
+title:               bitwiser.dev 
+tagline:             A journal of programming insights that made me a bit wiser 
 description:         'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
 url:                 http://lanyon.getpoole.com
 baseurl:             ''
 paginate:            5
 paginate_path:		   "page:num"
+plugins:             [jekyll-paginate]
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name:              Hannah Spearman 
+  email:             hspearman92@gmail.com
 
 # Custom vars
 version:             1.0.0
