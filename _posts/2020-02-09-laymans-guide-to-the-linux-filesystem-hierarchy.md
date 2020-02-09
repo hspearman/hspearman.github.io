@@ -32,7 +32,7 @@
 
 # Ethos
 
-It's been a continual goal of mine to gain a more cohesive understanding of Linux. As a small step towards that goal, I set out to understand the philosophy behind its hierarchy of files and directories.
+It's a continual goal of mine to gain a more cohesive understanding of Linux. As a small step towards that goal, I set out to understand the philosophy behind its filesystem hierarchy.
 
 If you're not a Linux wizard, it can be daunting to understand the intention behind its tersely-named directories: three-to-four letter names like `opt` and `etc` don't always make it easy to grok their purpose.
 
@@ -109,7 +109,7 @@ uKϯՙ, ;-3MǦ)bL/c0qbUG Xh:8IES
 
 `/etc` contains system configuration files. Generally, these files are **not executable** but simply **configure how your system operates**.
 
-For example, `/etc/hosts` contains IP addresses that map to host names. When the system tries to fetch a URL such as `foobar.com`, it contacts a DNS server to resolve the host name `foobar.com` to an actual IP address. But before it does that, the system checks if the host name exists locally in `/etc/hosts`.
+For example, `/etc/hosts` contains IP addresses that map to host names. When the system tries to fetch a URL such as `foobar.com`, it contacts a DNS server to resolve the host name `foobar.com` to an actual IP address. Before it does that, the system checks if the host name exists locally in `/etc/hosts`.
 
 Let's say I have a local web server running on port 5555 that I want to address by `foobar.com`. If I add `127.0.0.1 foobar.com` to `/etc/host` and `curl foobar.com:5555`, the system resolves that host name to my local web server due to my entry in the configuration file.
 
@@ -119,7 +119,7 @@ This is just one example, but `/etc` contains many other files that dictate syst
 
 `/home` contains a directory for each user on the system. A user's home directory contains personal files as well as user-specific configuration files for applications on your system.
 
-These configuration files are often referred to as "dot files" since they start with '.'. For example, `~/.bashrc` and `~/.bash_profile` configure how your console behaves.
+These configuration files are often referred to as **dotfiles** since they start with '.'. For example, `~/.bashrc` and `~/.bash_profile` configure how your console behaves.
 
 _NOTE: `~/` is simply a shortcut for `/home/yourusername/`._
 
@@ -163,13 +163,13 @@ For example, you could mount a remote file system over SSH in this directory for
 
 `/proc` is a **virtual file system** that represents information about running processes and other system data. The files it contains aren't actually _real_: they are an abstraction used to represent information about your system.
 
-To reiterate, these files are not actual data stored on disk: `ls -l /proc` shows that the size of almost every file is 0. Let's explore what this means.
+To reiterate, these files are not actual data stored on disk: `ls -l /proc` shows that the size of almost every file is 0. Let's explore why.
 
 On Linux, everything is a file. A file is simply an interface to a stream of bytes and does not necessarily represent static data that lives somewhere on disk.
 
 Why does Linux abstract the concept of files to such a wide definition? Think about it from the perspective of a programmer: it's simpler to write code and tools for a single interface rather than `n` arbitrarily different interfaces. At the end of the day, you just want to interact with data and probably don't care where it actually lives.
 
-`/proc` leverages this interface to make data about your system accessible. Specifically, it contains a directory named after every running process' ID or **PID**. For example, let's locate the corresponding folder for `cron` by it's PID:
+`/proc` leverages this interface to make data about your system accessible. Specifically, it contains a directory named after every running process ID or **PID**. For example, let's locate the corresponding folder for `cron` by it's PID:
 
 ```
 ~$ ps aux | grep cron
@@ -199,9 +199,9 @@ This example just scratches the surface. For now, just be aware that `/proc` is 
 
 ## `/run`
 
-`/run` contains temporarily files created by running programs. It's a fairly new directory established in 2011 that's similar to `/tmp` but slightly different. From my understanding, limits privileges a bit more than `/tmp` (which can be a bit of a wild west).
+`/run` contains temporarily files created by running programs. It's a fairly new directory established in 2011 that's similar to `/tmp` but slightly different. From my understanding, it limits privileges a bit more than `/tmp` (which can be a bit of a wild west).
 
-_NOTE: Since `/run` is meant to be ephemeral, your system cleans out it's contents on reboot._
+_NOTE: Since `/run` is meant to be ephemeral, your system clears its contents on reboot._
 
 ## `/sbin`
 
@@ -229,15 +229,15 @@ For example, you can inspect the size of the CPU's L1 cache:
 
 ## `/tmp`
 
-`/tmp` contains temporarily files created by running programs. For example, some programs may create lock files here to ensure that only one thread of execution performs a certain task at a time. Other programs may create files here to store temporary data that only needs to exist for a short period of time.
+`/tmp` contains temporary files created by running programs. For example, some programs may create lock files here to ensure that only one thread of execution performs a certain task at a time. Other programs may create files here to store temporary data that only needs to exist for a short period of time.
 
-_NOTE: Since `/tmp` is meant to be ephemeral, it's likely that your system cleans out it's contents on reboot (but this behavior is not guaranteed)._
+_NOTE: Since `/tmp` is meant to be ephemeral, it's likely that your system clears its contents on reboot (but this behavior is not guaranteed)._
 
 ## `/usr`
 
 `/usr` likely holds the lion's share of data on your system: it contains many user-space programs and data.
 
-You can think of user space as a "sandbox": programs run with lower privileges than those that run in kernel space. This is a bit of an oversimplification (and frankly, a topic that deserves it's own blog post)-- but for now, just be aware of the distinction.
+You can think of user-space as a "sandbox": programs run with lower privileges than those that run in kernel space. This is a bit of an oversimplification (and frankly, a topic that deserves it's own blog post)-- but for now, just be aware of the distinction.
 
 ### `/bin`
 
@@ -297,7 +297,7 @@ Linux was not immediately created in its final form, and often lives in a transi
 
 Beyond the context of Linux, **archaism is everywhere**.
 
-JavaScript was popularized as the language that all browsers understand despite its notorious reputation. To address the flaws of JavaScript, TypeScript was invented: a language that sits "on-top" of JavaScript. If you did not know the history of JavaScript as the arbitrarily standard language of all browsers, the fact that TypeScript compiles to JavaScript might seem incredibly bizarre. Only recently did we standardize WebAssembly, an assembly language for the web, that lets browsers break ties with JavaScript entirely!
+JavaScript was popularized as the language that all browsers understand despite its notorious reputation. To address the flaws of JavaScript, TypeScript was invented: a language that sits "on-top" of JavaScript. If you did not know the history of JavaScript as the arbitrarily-standard language of all browsers, the fact that TypeScript compiles to JavaScript might seem incredibly bizarre. Only recently did we standardize WebAssembly, an assembly language for the web, that lets browsers break ties with JavaScript entirely!
 
 My point is that **almost no standardized software was made in its perfect form**. In order to maintain backwards compatibility while iterating towards a better future, icky bits of archaism may hang around longer than we like.
 
