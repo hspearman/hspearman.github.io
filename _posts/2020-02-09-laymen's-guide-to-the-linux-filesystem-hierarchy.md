@@ -32,13 +32,13 @@
 
 # Ethos
 
-It's a continual goal of mine to gain a more cohesive understanding of Linux. As a small step towards that goal, I set out to understand the philosophy behind its filesystem hierarchy.
+It's a continual goal of mine to gain a more cohesive understanding of Linux. As a small step towards that goal, I set out to **understand the philosophy behind its filesystem hierarchy**.
 
 If you're not a Linux wizard, it can be daunting to understand the intention behind its tersely-named directories: three-to-four letter names like `opt` and `etc` don't always make it easy to grok their purpose.
 
 I'm not a Linux wizard myself. Though, I strive to understand its madness on my journey to become a more holistic software engineer. Beyond shear curiosity, Linux exhibits many clever design decisions that may influence the way you approach other problems (see my previous post about [applying unix philosophy to your note-taking setup](/2018/12/30/how-to-take-notes/)).
 
-I wrote this layman's guide to not only solidify my own understanding, but explain the basics of each directory to the other Linux laymen of the world as well.
+I wrote this layman's guide to not only solidify my own understanding, but to **explain the basics of each directory** to the other Linux laymen of the world as well.
 
 Let's dive in.
 
