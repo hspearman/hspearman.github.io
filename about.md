@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+order: 3
 ---
 
 Hi, I’m Hannah. I’m a **Software Engineer** focused in **Web Development** that lives in **Chicago, Illinois**. I love programming so I do it for a living.

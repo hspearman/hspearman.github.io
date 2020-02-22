@@ -5,7 +5,7 @@ date: 2020-02-15 0:00:00 -0600
 ---
 
 - [Ethos](#ethos)
-- [`/root`](#root)
+- [`/`](#)
   - [`/bin`](#bin)
   - [`/boot`](#boot)
   - [`/dev`](#dev)
@@ -16,7 +16,7 @@ date: 2020-02-15 0:00:00 -0600
   - [`/mnt`](#mnt)
   - [`/opt`](#opt)
   - [`/proc`](#proc)
-  - [`/root`](#root-1)
+  - [`/root`](#root)
   - [`/run`](#run)
   - [`/sbin`](#sbin)
   - [`/srv`](#srv)
@@ -48,7 +48,7 @@ I wrote this layman's guide to not only solidify my own understanding, but to **
 
 Let's dive in.
 
-# `/root`
+# `/`
 
 In a linux terminal, `/` denotes the root directory: it's the highest point in the hierarchy that houses all other directories below it.
 
