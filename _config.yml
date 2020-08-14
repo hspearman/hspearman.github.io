@@ -24,3 +24,5 @@ version:             1.0.0
 # Collections
 collections:
   - projects
+
+theme: jekyll-theme-tactile
