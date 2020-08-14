@@ -297,7 +297,7 @@ Linux was not immediately created in its final form, and often lives in a transi
 
 Beyond the context of Linux, **archaism is everywhere**.
 
-JavaScript was popularized as the language that all browsers understand despite its notorious reputation. To address the flaws of JavaScript, TypeScript was invented: a language that sits "on-top" of JavaScript. If you did not know the history of JavaScript as the arbitrarily-standard language of all browsers, the fact that TypeScript compiles to JavaScript might seem incredibly bizarre. Only recently did we standardize WebAssembly, an assembly language for the web, that lets browsers break ties with JavaScript entirely!
+JavaScript was popularized as the language that all browsers understand despite its notorious reputation. To address the flaws of JavaScript, TypeScript was invented: a language that sits "on-top" of JavaScript. If you did not know the history of JavaScript as the arbitrarily-standard language of all browsers, the fact that TypeScript transpiles to JavaScript might seem incredibly bizarre. Only recently did we standardize WebAssembly, an assembly language for the web, that lets browsers break ties with JavaScript entirely!
 
 My point is that **almost no standardized software was made in its perfect form**. In order to maintain backwards compatibility while iterating towards a better future, icky bits of archaism may hang around longer than we like.
 

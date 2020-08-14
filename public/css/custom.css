@@ -1,3 +1,7 @@
+.container {
+  max-width: 48rem;
+}
+
 .project-key-points {
     margin-bottom: 1rem;
 }
@@ -10,5 +14,83 @@
 }
 
 .inactive-key-point {
-    color: #9a9a9a;
+  color: #9a9a9a;
+}
+
+.archives li {
+  list-style: none;
+}
+
+.archives a {
+  font-size: 18px;
+}
+
+.archives div {
+  color: #9a9a9a;
+  font-size: 14px;
+}
+
+html {
+  line-height: 2;
+  font-family: 'Lato', serif;
+  font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inconsolata', sans-serif;
+  margin-bottom: 2rem;
+}
+
+p {
+  margin-bottom: 2rem;
+}
+
+.sidebar {
+  font-family: 'Inconsolata', sans-serif;
+}
+
+.pagination {
+  font-family: 'Inconsolata', sans-serif;
+}
+
+code,
+pre {
+  font-family: 'Inconsolata', serif;
+}
+
+.highlight pre {
+  margin-bottom: 2rem;
+}
+
+strong {
+  color: inherit;
+}
+
+img {
+  border: 1px solid #eee;
+  margin-bottom: 0;
+}
+
+.note-wrapper {
+  line-height: 1;
+}
+
+.note-wrapper em {
+  font-size: 12px;
+  font-style: normal;
+  color: #9a9a9a;
+}
+
+.img-with-subtitle {
+  margin-bottom: 0;
+}
+
+.img-subtitle {
+  margin-bottom: 2rem;
+}
+
+.img-subtitle em {
+  font-size: 12px;
+  font-style: normal;
+  color: #9a9a9a;
 }
